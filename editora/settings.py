@@ -76,8 +76,8 @@ WSGI_APPLICATION = 'editora.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'postgresql://data_base_vy4b_user:u3nlxaQXLxLXCp25NcFByPhEgsjcWw2O@dpg-crhc9im8ii6s73etb47g-a.oregon-postgres.render.com/data_base_vy4b': dj_database_url.config(
-        default='data-base',
+    'default': dj_database_url.config(
+        default='postgresql://data_base_vy4b_user:u3nlxaQXLxLXCp25NcFByPhEgsjcWw2O@dpg-crhc9im8ii6s73etb47g-a.oregon-postgres.render.com/data_base_vy4b',
         conn_max_age=600,
         ssl_require=not DEBUG
     )
